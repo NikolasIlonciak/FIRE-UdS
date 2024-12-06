@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Strom
+comment1.params=farba\ x\ y
+comment1.target=Strom(java.lang.String,\ int,\ int)
+comment2.params=farba
+comment2.target=void\ akcia(java.lang.String)
+numComments=3
