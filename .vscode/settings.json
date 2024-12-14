@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "FIRE/shapesGE-SK-2.0.4.jar"
+    ]
+}

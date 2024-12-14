@@ -2,11 +2,15 @@ import java.util.Random;
 
 public class Les {
     private Strom[][] les;
+    private int rozmerX;
+    private int rozmerY;
 
     public Les(int rozmerX, int rozmerY, int hustota) {
         
         this.les = new Strom[rozmerX][rozmerY];
         Random random = new Random();
+        this.rozmerX = rozmerX;
+        this.rozmerY = rozmerY;
 
         int totalStvorce = rozmerX * rozmerY;
         int zeleneStvorce = (totalStvorce * hustota) / 100; 
@@ -32,5 +36,21 @@ public class Les {
             }
 
         }
+    }
+
+    public int getRozmerX() {
+        return this.rozmerX;
+    }
+
+    public int getRozmerY() {
+        return this.rozmerY;
+    } 
+    
+    public Strom getStrom(int i, int j) {
+        return this.les[i][j];
+    }
+    
+    public void setStrom(int i, int j, String farba) {
+        this.les[i][j].akcia(farba);
     }
 }

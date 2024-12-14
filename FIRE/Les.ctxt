@@ -2,4 +2,12 @@
 comment0.target=Les
 comment1.params=rozmerX\ rozmerY\ hustota
 comment1.target=Les(int,\ int,\ int)
-numComments=2
+comment2.params=
+comment2.target=int\ getRozmerX()
+comment3.params=
+comment3.target=int\ getRozmerY()
+comment4.params=i\ j
+comment4.target=Strom\ getStrom(int,\ int)
+comment5.params=i\ j\ farba
+comment5.target=void\ setStrom(int,\ int,\ java.lang.String)
+numComments=6
