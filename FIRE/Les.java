@@ -1,11 +1,11 @@
 import java.util.Random;
 
 public class Les {
-    private Stvorec[][] les;
+    private Strom[][] les;
 
-    public Les(int rozmerX, int rozmerY, int stranaStvorca, int hustota) {
+    public Les(int rozmerX, int rozmerY, int hustota) {
         
-        this.les = new Stvorec[rozmerX][rozmerY];
+        this.les = new Strom[rozmerX][rozmerY];
         Random random = new Random();
 
         int totalStvorce = rozmerX * rozmerY;
@@ -14,10 +14,8 @@ public class Les {
         
         for (int i = 0; i < rozmerX; i++) {
             for (int j = 0; j < rozmerY; j++) {
-                this.les[i][j] = new Stvorec();
-                this.les[i][j].zmenPolohu(j * stranaStvorca, i * stranaStvorca); 
-                this.les[i][j].zmenStranu(stranaStvorca); 
-                this.les[i][j].zmenFarbu("black"); 
+                this.les[i][j] = new Strom("black", i, j);
+                
             }
         }
 
@@ -29,7 +27,7 @@ public class Les {
 
             
             if (!this.les[randomX][randomY].getFarba().equals("green")) {
-                this.les[randomX][randomY].zmenFarbu("green"); 
+                this.les[randomX][randomY].akcia("green"); 
                 priradeneZelene++;
             }
 

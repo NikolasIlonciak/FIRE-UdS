@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Les
+comment1.params=rozmerX\ rozmerY\ hustota
+comment1.target=Les(int,\ int,\ int)
+numComments=2
