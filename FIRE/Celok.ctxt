@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Celok
+comment1.params=velkostX\ velkostY\ hustota
+comment1.target=Celok(int,\ int,\ int)
+comment2.params=
+comment2.target=void\ ukonci()
+numComments=3
