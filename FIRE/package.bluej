@@ -1,9 +1,9 @@
 #BlueJ package file
-dependency1.from=Les
-dependency1.to=Strom
+dependency1.from=Ohen
+dependency1.to=Les
 dependency1.type=UsesDependency
-dependency2.from=Ohen
-dependency2.to=Les
+dependency2.from=Les
+dependency2.to=Strom
 dependency2.type=UsesDependency
 editor.fx.0.height=0
 editor.fx.0.width=0
