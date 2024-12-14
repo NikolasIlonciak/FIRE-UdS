@@ -8,11 +8,11 @@ public class Pocitadlo {
         int zelene = 0;
         int zhorene = 0;
         
-        for (int i = 0; i < this.les.getLes().length; i++) {
-            for (int j = 0; j < this.les.getLes()[i].length; j++) {
-                if (this.les.getLes()[i][j].getFarba().equals("green")) {
+        for (int i = 0; i < this.les.getRozmerX(); i++) {
+            for (int j = 0; j < this.les.getRozmerY(); j++) {
+                if (this.les.getStrom(i, j).getFarba().equals("green")) {
                     zelene++;
-                } else if (this.les.getLes()[i][j].getFarba().equals("red")) {
+                } else if (this.les.getStrom(i, j).getFarba().equals("red")) {
                     zhorene++;
                 }
             }
