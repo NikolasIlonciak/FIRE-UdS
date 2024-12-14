@@ -41,13 +41,14 @@ public class Ohen {
     } 
     
     public void tik() {
-        if (this.tikCounter < 1) {
-            this.tikCounter++;
-            return;
-        }
-        this.tikCounter = 0;
-        this.hori(this.cislo);
-        this.cislo++;
-        
+        try{
+            if (this.tikCounter < 1) {
+                this.tikCounter++;
+                return;
+            }
+            this.tikCounter = 0;
+            this.hori(this.cislo);
+            this.cislo++;
+        } catch(ArrayIndexOutOfBoundsException e){}
     }
 }
