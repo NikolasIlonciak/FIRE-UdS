@@ -1,10 +1,10 @@
 import java.util.Random;
-
 public class Les {
     private Strom[][] les;
     private int rozmerX;
     private int rozmerY;
-
+    
+    //vytovri pole stromov a podla hustoty nastavi ich farbu
     public Les(int rozmerX, int rozmerY, int hustota) {
         
         this.les = new Strom[rozmerX][rozmerY];

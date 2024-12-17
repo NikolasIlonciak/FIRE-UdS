@@ -2,6 +2,8 @@ public class Ohen {
     private int tikCounter;
     private int cislo;
     private Les les;
+    
+    //na pravej strane pola lesa sa nastavi farba vsetkych stromov na cervenu
     public Ohen(Les les) {
         this.les = les;
         this.cislo = 1;
@@ -11,6 +13,7 @@ public class Ohen {
         }
     }
     
+    //spusti akciu horenia a zmeni susedne zelene stromi na cervene
     public void hori(int tik) {
         for(int i = 0; i < tik; i++ ) {
             for(int j = 0; j < les.getRozmerY(); j++) {
@@ -40,6 +43,7 @@ public class Ohen {
         }
     } 
     
+    //casovac ktory sa raz za sekundu spusti
     public void tik() {
         try{
             if (this.tikCounter < 1) {

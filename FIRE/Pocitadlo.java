@@ -1,7 +1,8 @@
 public class Pocitadlo {
     
     private Les les;
-        
+    
+    //spocita nezhorene a zhorene stromy
     public Pocitadlo(Les les) {
         this.les = les;
         

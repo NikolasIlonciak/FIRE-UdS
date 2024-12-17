@@ -4,6 +4,7 @@ public class Strom {
     private Stvorec strom;
     private String farba;
     
+    //vytvori stvorec a nastavi mu farbu a polohu
     public Strom(String farba, int x, int y) {
         this.strom = new Stvorec();
         this.strom.zmenStranu(10);
@@ -13,10 +14,12 @@ public class Strom {
         this.strom.zobraz();
     }
     
+    //zmeni farbu stvorca
     public void akcia(String farba) {
         this.strom.zmenFarbu(farba);
         this.farba = farba;
     }
+    
     
     public String getFarba() {
         return this.farba;
